@@ -74,7 +74,7 @@ def process_log_file(cur, conn, filepath):
         "start_time": t,
         "hour": t.dt.hour,
         "day": t.dt.day,
-        "week": t.dt.week,
+        "week": t.dt.isocalendar().week,
         "month": t.dt.month,
         "year": t.dt.year,
         "weekday": t.dt.weekday
